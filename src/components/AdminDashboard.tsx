@@ -494,7 +494,7 @@ const AdminDashboard = () => {
                   <>
                     <Input placeholder="Nome completo" className="bg-white/10 border-white/20 text-white" />
                     <Input placeholder="Email" className="bg-white/10 border-white/20 text-white" />
-                    <select className="w-full p-2 bg-white/10 border border-white/20 rounded-md text-white">
+                    <select className="w-full p-2 bg-white/10 border border-white/20 rounded-md text-black">
                       <option value="student">Aluno</option>
                       <option value="teacher">Professor</option>
                       <option value="admin">Administrador</option>
