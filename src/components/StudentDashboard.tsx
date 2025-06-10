@@ -8,12 +8,12 @@ import { Badge } from '@/components/ui/badge';
 import { Tabs, TabsContent, TabsList, TabsTrigger } from '@/components/ui/tabs';
 import { ScrollArea } from '@/components/ui/scroll-area';
 import { toast } from 'sonner';
-import { 
-  BookOpen, 
-  Play, 
-  Download, 
-  MessageSquare, 
-  Bell, 
+import {
+  BookOpen,
+  Play,
+  Download,
+  MessageSquare,
+  Bell,
   Calendar,
   TrendingUp,
   Award,
@@ -177,7 +177,7 @@ const StudentDashboard = () => {
               {currentUser.plan}
             </Badge>
             <span className="text-white">Olá, {currentUser.name}</span>
-            <Button onClick={handleLogout} variant="outline" className="border-white/20 text-white hover:bg-white/10">
+            <Button onClick={handleLogout} variant="outline" className="border-white/20 text-black hover:bg-white/10">
               Sair
             </Button>
           </div>
@@ -220,7 +220,7 @@ const StudentDashboard = () => {
                       </div>
                       <Progress value={course.progress} className="bg-white/20" />
                     </div>
-                    
+
                     <div className="grid grid-cols-2 gap-4 text-sm text-gray-300">
                       <div>
                         <span className="block">Módulos</span>
@@ -236,7 +236,7 @@ const StudentDashboard = () => {
                       </div>
                     </div>
 
-                    <Button 
+                    <Button
                       onClick={() => setSelectedCourse(course)}
                       className="w-full bg-purple-600 hover:bg-purple-700"
                     >
@@ -257,8 +257,8 @@ const StudentDashboard = () => {
                       Módulos do curso
                     </CardDescription>
                   </div>
-                  <Button 
-                    variant="ghost" 
+                  <Button
+                    variant="ghost"
                     onClick={() => setSelectedCourse(null)}
                     className="text-white hover:bg-white/10"
                   >
@@ -277,18 +277,18 @@ const StudentDashboard = () => {
                           </div>
                         </div>
                         <div className="flex space-x-2">
-                          <Button 
-                            size="sm" 
+                          <Button
+                            size="sm"
                             onClick={() => watchVideo(module.id)}
                             className="bg-purple-600 hover:bg-purple-700"
                           >
                             <Play className="w-4 h-4" />
                           </Button>
-                          <Button 
-                            size="sm" 
+                          <Button
+                            size="sm"
                             variant="outline"
                             onClick={() => downloadMaterial(module.title)}
-                            className="border-white/20 text-white hover:bg-white/10"
+                            className="border-white/20 text-black hover:bg-white/10"
                           >
                             <Download className="w-4 h-4" />
                           </Button>
@@ -371,9 +371,8 @@ const StudentDashboard = () => {
                 <ScrollArea className="h-80">
                   <div className="space-y-4">
                     {messages.map((message) => (
-                      <div key={message.id} className={`p-4 rounded-lg cursor-pointer transition-colors ${
-                        message.read ? 'bg-white/5' : 'bg-purple-500/20'
-                      }`}>
+                      <div key={message.id} className={`p-4 rounded-lg cursor-pointer transition-colors ${message.read ? 'bg-white/5' : 'bg-purple-500/20'
+                        }`}>
                         <div className="flex justify-between items-start mb-2">
                           <h4 className="text-white font-medium">{message.from}</h4>
                           <span className="text-gray-400 text-sm">{message.time}</span>
@@ -401,9 +400,8 @@ const StudentDashboard = () => {
                 <ScrollArea className="h-80">
                   <div className="space-y-4">
                     {notifications.map((notification) => (
-                      <div key={notification.id} className={`p-4 rounded-lg transition-colors ${
-                        notification.read ? 'bg-white/5' : 'bg-blue-500/20'
-                      }`}>
+                      <div key={notification.id} className={`p-4 rounded-lg transition-colors ${notification.read ? 'bg-white/5' : 'bg-blue-500/20'
+                        }`}>
                         <div className="flex justify-between items-start mb-2">
                           <h4 className="text-white font-medium">{notification.title}</h4>
                           <span className="text-gray-400 text-sm">{notification.time}</span>

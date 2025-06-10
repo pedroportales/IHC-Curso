@@ -159,7 +159,7 @@ const AdminDashboard = () => {
           <div className="flex items-center space-x-4">
             <Badge className="bg-red-500 text-white">Administrador</Badge>
             <span className="text-white">{currentUser.name}</span>
-            <Button onClick={handleLogout} variant="outline" className="border-white/20 text-white hover:bg-white/10">
+            <Button onClick={handleLogout} variant="outline" className="border-white/20 text-black hover:bg-white/10">
               Sair
             </Button>
           </div>
@@ -267,7 +267,7 @@ const AdminDashboard = () => {
                           size="sm" 
                           variant="outline"
                           onClick={() => handleEdit(course, 'curso')}
-                          className="border-white/20 text-white hover:bg-white/10"
+                          className="border-white/20 text-black hover:bg-white/10"
                         >
                           <Edit className="w-4 h-4" />
                         </Button>
@@ -356,7 +356,7 @@ const AdminDashboard = () => {
                           size="sm" 
                           variant="outline"
                           onClick={() => handleEdit(user, 'usuário')}
-                          className="border-white/20 text-white hover:bg-white/10"
+                          className="border-white/20 text-black hover:bg-white/10"
                         >
                           <Edit className="w-4 h-4" />
                         </Button>
@@ -464,10 +464,10 @@ const AdminDashboard = () => {
                     <span className="text-gray-300">Último Backup</span>
                     <span className="text-white">03/06/2024 - 02:00</span>
                   </div>
-                  <Button variant="outline" className="w-full border-white/20 text-white hover:bg-white/10">
+                  <Button variant="outline" className="w-full border-white/20 text-black hover:bg-white/10">
                     Fazer Backup Agora
                   </Button>
-                  <Button variant="outline" className="w-full border-white/20 text-white hover:bg-white/10">
+                  <Button variant="outline" className="w-full border-white/20 text-black hover:bg-white/10">
                     Ver Logs do Sistema
                   </Button>
                 </CardContent>
@@ -511,7 +511,7 @@ const AdminDashboard = () => {
                   <Button 
                     onClick={() => setShowCreateForm(false)}
                     variant="outline"
-                    className="flex-1 border-white/20 text-white hover:bg-white/10"
+                    className="flex-1 border-white/20 text-black hover:bg-white/10"
                   >
                     Cancelar
                   </Button>

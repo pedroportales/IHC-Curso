@@ -178,7 +178,7 @@ const LoginForm = () => {
                   variant="outline"
                   size="sm"
                   onClick={() => fillDemoCredentials('student')}
-                  className="border-white/20 text-white hover:bg-white/10 text-xs"
+                  className="border-white/20 text-black hover:bg-white/10 text-xs"
                 >
                   Aluno
                 </Button>
@@ -186,7 +186,7 @@ const LoginForm = () => {
                   variant="outline"
                   size="sm"
                   onClick={() => fillDemoCredentials('teacher')}
-                  className="border-white/20 text-white hover:bg-white/10 text-xs"
+                  className="border-white/20 text-black hover:bg-white/10 text-xs"
                 >
                   Professor
                 </Button>
@@ -194,7 +194,7 @@ const LoginForm = () => {
                   variant="outline"
                   size="sm"
                   onClick={() => fillDemoCredentials('admin')}
-                  className="border-white/20 text-white hover:bg-white/10 text-xs"
+                  className="border-white/20 text-black hover:bg-white/10 text-xs"
                 >
                   Admin
                 </Button>

@@ -133,7 +133,7 @@ const TeacherDashboard = () => {
           <div className="flex items-center space-x-4">
             <Badge className="bg-green-500 text-white">Professor</Badge>
             <span className="text-white">Prof. {currentUser.name}</span>
-            <Button onClick={handleLogout} variant="outline" className="border-white/20 text-white hover:bg-white/10">
+            <Button onClick={handleLogout} variant="outline" className="border-white/20 text-black hover:bg-white/10">
               Sair
             </Button>
           </div>
@@ -292,7 +292,7 @@ const TeacherDashboard = () => {
                   <Button 
                     onClick={() => document.getElementById('fileUpload').click()}
                     variant="outline"
-                    className="border-white/20 text-white hover:bg-white/10"
+                    className="border-white/20 text-black hover:bg-white/10"
                   >
                     Escolher Arquivo
                   </Button>
@@ -348,7 +348,7 @@ const TeacherDashboard = () => {
                   <div className="space-y-2">
                     <Label htmlFor="recipients" className="text-white">Para</Label>
                     <select 
-                      className="w-full p-2 bg-white/10 border border-white/20 rounded-md text-white"
+                      className="w-full p-2 bg-white/10 border border-white/20 rounded-md text-black"
                       value={newMessage.recipients}
                       onChange={(e) => setNewMessage({...newMessage, recipients: e.target.value})}
                     >
